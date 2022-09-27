@@ -22,14 +22,6 @@ featureFlags:
           offVariation: "false"
         state: "on"
         rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - After_Feb_2022
         - priority: 1
           serve:
             serveVariation: "true"

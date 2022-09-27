@@ -30,6 +30,14 @@ featureFlags:
             op: segmentMatch
             values:
             - After_Feb_2022
+        - priority: 1
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - Started_In_Feb_2022
   - flag:
       name: FF_afterMarch2022
       identifier: FF_afterMarch2022

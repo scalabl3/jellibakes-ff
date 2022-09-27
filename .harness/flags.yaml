@@ -1,7 +1,7 @@
 featureFlags:
   flags:
   - flag:
-      name: FF_afterFebString
+      name: FF_startInFeb
       identifier: FF_afterFebString
       description: ""
       permanent: false

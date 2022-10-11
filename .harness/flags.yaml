@@ -22,14 +22,6 @@ featureFlags:
           offVariation: "false"
         state: "on"
         rules:
-        - priority: 0
-          serve:
-            serveVariation: "true"
-          clauses:
-          - attribute: ""
-            op: segmentMatch
-            values:
-            - EarlyAccess
         - priority: 1
           serve:
             serveVariation: "false"
@@ -38,6 +30,14 @@ featureFlags:
             op: segmentMatch
             values:
             - InNorthAmerica
+        - priority: 3
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - EarlyAccess
   - flag:
       name: FF_startInFeb
       identifier: FF_afterFebString

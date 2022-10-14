@@ -209,6 +209,15 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "off"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: "true"
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - jasdeep9
   - flag:
       name: VIP
       identifier: VIP

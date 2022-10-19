@@ -99,6 +99,27 @@ featureFlags:
             values:
             - afterMarch2022
   - flag:
+      name: FFforSri
+      identifier: FFforSri
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: Dev
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: FF_in2022
       identifier: FF_in2022
       description: ""

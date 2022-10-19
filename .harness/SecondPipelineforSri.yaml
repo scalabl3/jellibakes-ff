@@ -1,6 +1,6 @@
 pipeline:
-  name: PipelineforSri
-  identifier: PipelineforSri
+  name: SecondPipelineforSri
+  identifier: SecondPipelineforSri
   projectIdentifier: Test_Project
   orgIdentifier: default
   tags: {}
